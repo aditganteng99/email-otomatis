@@ -26,4 +26,4 @@ jobs:
       - name: Run email scheduler script
         env:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-        run: python email_scheduler.py
+        run: python smart_screener.py
