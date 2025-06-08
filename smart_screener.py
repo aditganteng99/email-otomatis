@@ -59,10 +59,8 @@ for kode in saham_list:
 # Format email
 tanggal = datetime.now().strftime("%d-%m-%Y %H:%M")
 subject = f"[Smart Screener IDX] - {tanggal}"
-body = "Saham dengan sinyal kombinasi teknikal:
-
-" + ("
-".join(hasil) if hasil else "Tidak ada sinyal pasti naik hari ini.")
+body = "Saham dengan sinyal kombinasi teknikal:\n\n" + ("\n".join(hasil) if hasil else "Tidak ada sinyal pasti naik hari ini.")
+)
 
 # Kirim email
 msg = MIMEMultipart()
